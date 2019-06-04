@@ -3,7 +3,6 @@ const mysql = require("mysql");
 const inquirer = require("inquirer");
 const fs = require("fs");
 require("console.table"); //no need to intialize
-
 //set up sql connection for mysql and local server
 const connection = mysql.createConnection({
     host: "localhost",

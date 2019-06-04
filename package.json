@@ -1,0 +1,25 @@
+{
+  "name": "redo10hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allisonsnipes/redohw10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allisonsnipes/redohw10/issues"
+  },
+  "homepage": "https://github.com/allisonsnipes/redohw10#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  }
+}
