@@ -3,6 +3,7 @@ const mysql = require("mysql");
 const inquirer = require("inquirer");
 const fs = require("fs");
 require("console.table"); //no need to intialize
+
 //set up sql connection for mysql and local server
 const connection = mysql.createConnection({
     host: "localhost",
@@ -25,6 +26,7 @@ function show() {
         if (err) throw err
         console.table(data);
         sku();
+        buy();
         // console.log("success");
     })
 }
@@ -33,10 +35,20 @@ function sku() {
     inquirer.prompt([{
         type: "skuSelection",
         name: "items",
-        message: "Enter the SKU of the item you want to buy."
-        message: "Enter the SKU of the item you want to buy."
+        message: "Enter the SKU of the item you're interested in."
     }]).then(function(data) {
         console.log(data);
-
     })
+}
+
+function buy() {
+    inquirer.prompt([{
+        type: "buyingSelection",
+        name: "items",
+        message: "How many items do you want to buy?"
+    }]).then(function(data) {
+        console.log(data);
+    })
+
+
 }
